@@ -16,7 +16,7 @@ namespace CivSem1Challenge2_CarSystem.models {
 
         public string GetDetails() {
             //TODO: complete the below to return the Make and Model of a car
-            return $"Make: {this.Make} Model: {this.Model} YearOfManufacture {this.YearOfManufacture}";
+            return $"Make: {this.Make} Model: {this.Model} YearOfManufacture: {this.YearOfManufacture}";
         }
 
     }

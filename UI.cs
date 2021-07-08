@@ -176,7 +176,16 @@ namespace CivSem1Challenge2_CarSystem
             //TODO: write code find the relevant car in this.Cars and return the car's details
             // should use the method GetDetails() from Car
 
-            foreach ()
+            // - loop thorugh cars 
+            // - Registration == rego
+            // - return GetDetails() if true
+            // - if rego not found, return null
+            
+            foreach (Car c in this.Cars) {
+                if (rego == c.Registration) {
+                    return c.GetDetails();
+                }
+            }
             return null;
         }
 
