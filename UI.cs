@@ -86,6 +86,7 @@ namespace CivSem1Challenge2_CarSystem
                     //TODO: Print the amount of cars in the system
                     // Create and call a method/function named GetNumCars() to do this.
                     
+                    // - calling function to count and print num of total cars
                     System.Console.WriteLine(this.GetNumCars());
 
                     break;
@@ -165,6 +166,9 @@ namespace CivSem1Challenge2_CarSystem
 
 
         //TODO: create the GetNumCars() method/function here
+        
+        // - function to count total num of cars
+
         public int GetNumCars() {
             return this.Cars.Count;
         }
@@ -180,7 +184,7 @@ namespace CivSem1Challenge2_CarSystem
             // - Registration == rego
             // - return GetDetails() if true
             // - if rego not found, return null
-            
+
             foreach (Car c in this.Cars) {
                 if (rego == c.Registration) {
                     return c.GetDetails();
