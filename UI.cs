@@ -45,6 +45,13 @@ namespace CivSem1Challenge2_CarSystem
                     //TODO: from the attribute this.CarDealers, print the ids and Addresses of all of the car dealers
                     // use GetAddress() to do this
 
+                    // - loop through CarDealers list 
+                    // - call GetAddress() on each car dealer
+
+                    foreach (CarDealer c in this.CarDealers) {
+                        System.Console.WriteLine(c.GetAddress());
+
+                    }
                     //----------
                     break;
                 
@@ -78,6 +85,8 @@ namespace CivSem1Challenge2_CarSystem
                 case "4":
                     //TODO: Print the amount of cars in the system
                     // Create and call a method/function named GetNumCars() to do this.
+                    
+
                     break;
 
                 case "5":
@@ -143,6 +152,8 @@ namespace CivSem1Challenge2_CarSystem
             
         }
 
+        
+         
         //TODO: complete for menu item 5.
         private int GetTotalCostCarDealers()
         {
