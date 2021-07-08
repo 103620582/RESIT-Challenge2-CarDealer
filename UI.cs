@@ -86,6 +86,7 @@ namespace CivSem1Challenge2_CarSystem
                     //TODO: Print the amount of cars in the system
                     // Create and call a method/function named GetNumCars() to do this.
                     
+                    System.Console.WriteLine(this.GetNumCars());
 
                     break;
 
@@ -94,6 +95,7 @@ namespace CivSem1Challenge2_CarSystem
                     numCars = this.GetTotalCostCarDealers();
                     System.Console.WriteLine($"There are a total of {numCars} in the car dealers");
                     break;
+                
 
                 case "6":
                    //TODO: Add a car to the cars List. Then add that car to a valid car dealer
@@ -151,7 +153,8 @@ namespace CivSem1Challenge2_CarSystem
 
             
         }
-
+        
+        
         
          
         //TODO: complete for menu item 5.
@@ -162,7 +165,9 @@ namespace CivSem1Challenge2_CarSystem
 
 
         //TODO: create the GetNumCars() method/function here
-
+        public int GetNumCars() {
+            return this.Cars.Count;
+        }
 
         //---------------------
 
@@ -170,6 +175,8 @@ namespace CivSem1Challenge2_CarSystem
         {
             //TODO: write code find the relevant car in this.Cars and return the car's details
             // should use the method GetDetails() from Car
+
+            foreach ()
             return null;
         }
 
@@ -178,6 +185,20 @@ namespace CivSem1Challenge2_CarSystem
         {
             //TODO: write code find the relevant car dealer by DealerId in this.CarDealers and return the number of listings
             // if num doesn't exist in CarDealers, return -1
+            
+            // - loop through List<Listing>
+            // - DealerID == num
+            // - return number of Listings in car dealer
+            // - if DealerId doesnt exist, return -1
+
+            
+            foreach (CarDealer cd in this.CarDealers) {
+                if (cd.DealerId == num) {
+                    return cd.Listings.Count;
+                }
+                
+            }
+
             return -1;
         }
 
